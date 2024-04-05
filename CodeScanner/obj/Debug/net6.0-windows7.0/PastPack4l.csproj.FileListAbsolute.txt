@@ -1,0 +1,156 @@
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.exe
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.deps.json
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.runtimeconfig.json
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.pdb
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Data.SqlClient.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Logging.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Options.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Primitives.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Identity.Client.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Logging.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Newtonsoft.Json.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\System.Runtime.Caching.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.AssemblyReference.cache
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\WindowsFormsApp1.Form1.resources
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.GenerateResource.cache
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.AssemblyInfoInputs.cache
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.AssemblyInfo.cs
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.CoreCompileInputs.cache
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.Up2Date
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\refint\PastPack4l.dll
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.pdb
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.genruntimeconfig.cache
+C:\Projects\PastPack6l\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\ref\PastPack4l.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.exe
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.deps.json
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.runtimeconfig.json
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.pdb
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Data.SqlClient.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Logging.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Options.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Identity.Client.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Newtonsoft.Json.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\System.Runtime.Caching.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.AssemblyReference.cache
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\WindowsFormsApp1.Form1.resources
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.GenerateResource.cache
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.AssemblyInfoInputs.cache
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.AssemblyInfo.cs
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.CoreCompileInputs.cache
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.Up2Date
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\refint\PastPack4l.dll
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.pdb
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.genruntimeconfig.cache
+C:\Users\cbxjy\Downloads\Telegram Desktop\PastPack6l_final\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\ref\PastPack4l.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.exe
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.deps.json
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.runtimeconfig.json
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\PastPack4l.pdb
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Data.SqlClient.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Logging.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Options.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Primitives.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.Identity.Client.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Logging.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Protocols.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Microsoft.IdentityModel.Tokens.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\Newtonsoft.Json.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\System.Runtime.Caching.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\projects\PastPack6l\PastPack6l\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.AssemblyReference.cache
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\WindowsFormsApp1.Form1.resources
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.GenerateResource.cache
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.AssemblyInfoInputs.cache
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.AssemblyInfo.cs
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.CoreCompileInputs.cache
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.csproj.Up2Date
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.dll
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\refint\PastPack4l.dll
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.pdb
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\PastPack4l.genruntimeconfig.cache
+C:\projects\PastPack6l\PastPack6l\obj\Debug\net6.0-windows7.0\ref\PastPack4l.dll

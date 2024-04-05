@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeScanner", "CodeScanner\CodeScanner.csproj", "{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{9C5F1495-3080-44C2-A89B-6D5B40B8E0E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5F1495-3080-44C2-A89B-6D5B40B8E0E4}.Debug|Any CPU.ActiveCfg = Release
+		{9C5F1495-3080-44C2-A89B-6D5B40B8E0E4}.Debug|Any CPU.Build.0 = Release
+		{9C5F1495-3080-44C2-A89B-6D5B40B8E0E4}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F30F92C8-6EA4-44F9-8B60-1B1BCE344BA9}
+	EndGlobalSection
+EndGlobal
