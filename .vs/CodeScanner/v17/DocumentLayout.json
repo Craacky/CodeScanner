@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\projects\\CodeScanner\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|C:\\projects\\CodeScanner\\codescanner\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|solutionrelative:codescanner\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|c:\\projects\\codescanner\\codescanner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|solutionrelative:codescanner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|c:\\projects\\codescanner\\codescanner\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|solutionrelative:codescanner\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|C:\\projects\\CodeScanner\\codescanner\\ui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|solutionrelative:codescanner\\ui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|C:\\projects\\CodeScanner\\codescanner\\codescanner.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|solutionrelative:codescanner\\codescanner.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|C:\\projects\\CodeScanner\\codescanner\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|solutionrelative:codescanner\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|C:\\projects\\CodeScanner\\codescanner\\ui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|solutionrelative:codescanner\\ui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|c:\\projects\\codescanner\\codescanner\\ui.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{0B82D1CA-1B71-43E0-81A5-228636B0FA0B}|CodeScanner\\CodeScanner.csproj|solutionrelative:codescanner\\ui.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 237,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\CodeScanner\\CodeScanner\\Program.cs",
+              "RelativeDocumentMoniker": "CodeScanner\\Program.cs",
+              "ToolTip": "C:\\projects\\CodeScanner\\CodeScanner\\Program.cs",
+              "RelativeToolTip": "CodeScanner\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T20:35:37.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UI.resx",
+              "DocumentMoniker": "C:\\projects\\CodeScanner\\CodeScanner\\UI.resx",
+              "RelativeDocumentMoniker": "CodeScanner\\UI.resx",
+              "ToolTip": "C:\\projects\\CodeScanner\\CodeScanner\\UI.resx",
+              "RelativeToolTip": "CodeScanner\\UI.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-04-06T20:35:35.379Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -36,14 +69,14 @@
               "RelativeDocumentMoniker": "CodeScanner\\UI.Designer.cs",
               "ToolTip": "C:\\projects\\CodeScanner\\CodeScanner\\UI.Designer.cs",
               "RelativeToolTip": "CodeScanner\\UI.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBwAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T19:02:49.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UI.cs [Design]",
               "DocumentMoniker": "C:\\projects\\CodeScanner\\CodeScanner\\UI.cs",
               "RelativeDocumentMoniker": "CodeScanner\\UI.cs",
@@ -55,26 +88,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CodeScanner",
               "DocumentMoniker": "C:\\projects\\CodeScanner\\CodeScanner\\CodeScanner.csproj",
               "RelativeDocumentMoniker": "CodeScanner\\CodeScanner.csproj",
               "ToolTip": "C:\\projects\\CodeScanner\\CodeScanner\\CodeScanner.csproj",
               "RelativeToolTip": "CodeScanner\\CodeScanner.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-05T19:05:10.959Z"
+              "WhenOpened": "2024-04-05T19:05:10.959Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UI.cs",
               "DocumentMoniker": "C:\\projects\\CodeScanner\\CodeScanner\\UI.cs",
               "RelativeDocumentMoniker": "CodeScanner\\UI.cs",
               "ToolTip": "C:\\projects\\CodeScanner\\CodeScanner\\UI.cs",
               "RelativeToolTip": "CodeScanner\\UI.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAIA7wDAAAAATAAAA",
+              "ViewState": "AQIAAP8AAAAAAAAAAAAkwDAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T18:23:37.819Z"
+              "WhenOpened": "2024-04-05T18:23:37.819Z",
+              "EditorCaption": ""
             }
           ]
         }

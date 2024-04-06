@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C26E730F27864C65B590776FD453F86D"
+        "MsmKey" = "8:_2B50A6386B40489497EA597FFFBF1C95"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -43,6 +43,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -59,6 +75,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -167,7 +191,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Installer"
         "ProductCode" = "8:{E178F437-CC92-46D9-A0B0-A5540DFC6F5C}"
-        "PackageCode" = "8:{2CA6FA45-E167-4A77-80A8-79C339C5F720}"
+        "PackageCode" = "8:{F5FED563-C9A3-4E96-93B8-B955365E0953}"
         "UpgradeCode" = "8:{1DCF6307-5EDE-479B-A410-2D2EED87B6A3}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -287,20 +311,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5D05003480E146C1A4FA0E0D5485EF75"
-            {
-            "Name" = "8:CodeScannerApp"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_C26E730F27864C65B590776FD453F86D"
-            "Folder" = "8:_1C57EF143B224FD78E4E06C1A5F80681"
-            "WorkingFolder" = "8:_9505AC2610DC4B339A81C427EF2655B2"
-            "Icon" = "8:_0DE5D73D6BD84F80A83165EA58B1F5E5"
-            "Feature" = "8:"
-            }
         }
         "UserInterface"
         {
@@ -700,7 +710,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C26E730F27864C65B590776FD453F86D"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2B50A6386B40489497EA597FFFBF1C95"
             {
             "SourcePath" = "8:..\\CodeScanner\\obj\\Debug\\net6.0-windows7.0\\apphost.exe"
             "TargetName" = "8:"

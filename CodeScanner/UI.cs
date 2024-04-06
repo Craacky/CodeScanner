@@ -21,8 +21,9 @@ namespace WindowsFormsApp1
         static readonly string appDataFolderPath = Environment.GetFolderPath(
             Environment.SpecialFolder.ApplicationData
         );
-        static readonly string appFolderPath = Path.Combine(appDataFolderPath, "App_Code_Scanner");
-        readonly string configFilePath = Path.Combine(appFolderPath, "config.txt");
+        static readonly string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner App");
+        static readonly string configFilePath = Path.Combine(appFolderPath, "config.txt");
+        static readonly string scannedCodeFolderPath = Path.Combine(appFolderPath, "Scanned codes");
 
         public static string Camera_ip
         {
@@ -37,20 +38,26 @@ namespace WindowsFormsApp1
 
         public UI()
         {
-            if (!Directory.Exists(appFolderPath))
-            {
-                Directory.CreateDirectory(appFolderPath);
-            }
-            if (!File.Exists(configFilePath))
-            {
-                File.Create(configFilePath);
-            }
             string Port_line;
             using (StreamReader reader = new(configFilePath))
             {
                 Camera_ip = reader.ReadLine();
                 Port_line = reader.ReadLine();
                 Camera_port = int.Parse(Port_line);
+            }
+            if (Camera_ip.Equals("0.0.0.0") && Port_line.Equals("0"))
+            {
+                DialogResult choice = MessageBox.Show(
+                    "Конфиругационный фалй пустой! Заполните его!",
+                    "Если всё понятно, нажмите OK",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                if (choice == DialogResult.OK)
+                {
+                    Environment.Exit(0);
+                    Application.Exit();
+                }
             }
 
             InitializeComponent();
@@ -292,12 +299,6 @@ namespace WindowsFormsApp1
             var gtin = firstCode.Substring(5, 22);
             gtin = gtin[2..];
 
-            string folder_path = Path.Combine(appFolderPath, "scanned_codes");
-            if (!Directory.Exists(folder_path))
-            {
-                Directory.CreateDirectory(folder_path);
-            }
-
             if (CheckString(gtin))
             {
                 MessageBox.Show("Считанный код содержит буквы.");
@@ -314,7 +315,7 @@ namespace WindowsFormsApp1
             }
 
             String filename =
-                folder_path
+                scannedCodeFolderPath
                 + "\\"
                 + gtin
                 + '_'
