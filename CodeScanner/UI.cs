@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         static readonly string appDataFolderPath = Environment.GetFolderPath(
             Environment.SpecialFolder.ApplicationData
         );
-        static readonly string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner App");
+        static readonly string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner");
         static readonly string configFilePath = Path.Combine(appFolderPath, "config.txt");
         static readonly string scannedCodeFolderPath = Path.Combine(appFolderPath, "Scanned codes");
 
@@ -409,5 +409,7 @@ namespace WindowsFormsApp1
             Environment.Exit(0);
             Application.Exit();
         }
+
+        private void UI_Load(object sender, EventArgs e) { }
     }
 }

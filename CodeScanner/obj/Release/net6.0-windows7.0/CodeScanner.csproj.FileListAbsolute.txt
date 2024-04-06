@@ -48,3 +48,6 @@ C:\projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\refint\CodeSca
 C:\projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\CodeScanner.pdb
 C:\projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\CodeScanner.genruntimeconfig.cache
 C:\projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\ref\CodeScanner.dll
+C:\projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\WindowsFormsApp1.UI.resources
+C:\projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\CodeScanner.csproj.GenerateResource.cache
+C:\projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\CodeScanner.sourcelink.json

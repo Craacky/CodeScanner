@@ -26,7 +26,7 @@ namespace CodeScanner
             string appDataFolderPath = Environment.GetFolderPath(
                 Environment.SpecialFolder.ApplicationData
             );
-            string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner App");
+            string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner");
 
             string scannedCodesFolderPath = Path.Combine(appFolderPath, "Scanned codes");
             if (!Directory.Exists(scannedCodesFolderPath))
@@ -35,7 +35,7 @@ namespace CodeScanner
             }
 
             string configFilePath = Path.Combine(appFolderPath, "config.txt");
-            List<string> lines = new List<string>() { "0.0.0.0", "0" };
+            List<string> lines = new() { "0.0.0.0", "0" };
             if (!File.Exists(configFilePath))
             {
                 File.WriteAllLines(configFilePath, lines);

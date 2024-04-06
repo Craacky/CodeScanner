@@ -325,8 +325,9 @@
 			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			Name = "UI";
-			Text = "CodeScanner";
+			Text = "Code Scanner";
 			FormClosing += Form1_FormClosing;
+			Load += UI_Load;
 			statisticsBox.ResumeLayout(false);
 			statisticsBox.PerformLayout();
 			statusBox.ResumeLayout(false);
