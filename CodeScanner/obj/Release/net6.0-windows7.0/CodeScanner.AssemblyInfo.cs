@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeScanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17576762b1fa3125e02721f94ae903489e89444d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1abd972ea31ebead414bc9643662d064cabbe98")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeScanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeScanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

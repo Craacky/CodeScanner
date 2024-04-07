@@ -381,7 +381,7 @@ namespace WindowsFormsApp1
             _camera.codeRead = 0;
             _camera.codeNoRead = 0;
             StatusBar.BackColor = Color.LightGreen;
-            StatusBar.Text = "Статистика сброшена. Начните с начала.";
+            StatusBar.Text = "Статистика сброшена. Камера отключена.";
         }
 
         private void LotNumBox_TextChanged(object sender, EventArgs e)
