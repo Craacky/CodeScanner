@@ -5943,11 +5943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\CodeScanner\\CodeScanner\\CodeScanner.csproj",
+      "projectUniqueName": "D:\\Projects\\CodeScanner\\CodeScanner\\CodeScanner.csproj",
       "projectName": "CodeScanner",
-      "projectPath": "C:\\projects\\CodeScanner\\CodeScanner\\CodeScanner.csproj",
+      "projectPath": "D:\\Projects\\CodeScanner\\CodeScanner\\CodeScanner.csproj",
       "packagesPath": "C:\\Users\\cbxjy\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\CodeScanner\\CodeScanner\\obj\\",
+      "outputPath": "D:\\Projects\\CodeScanner\\CodeScanner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cbxjy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6009,7 +6009,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

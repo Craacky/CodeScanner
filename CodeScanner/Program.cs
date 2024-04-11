@@ -28,14 +28,24 @@ namespace CodeScanner
             );
             string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner");
 
-            string scannedCodesFolderPath = Path.Combine(appFolderPath, "Scanned codes");
+            string scannedCodesFolderPath = Path.Combine(appFolderPath, "Scanned Codes");
+            string scannedCodesArchiveFolderPath = Path.Combine(
+                appFolderPath,
+                "Total Scanned Codes"
+            );
             if (!Directory.Exists(scannedCodesFolderPath))
             {
                 Directory.CreateDirectory(scannedCodesFolderPath);
             }
+            if (!Directory.Exists(scannedCodesArchiveFolderPath))
+            {
+                Directory.CreateDirectory(scannedCodesArchiveFolderPath);
+            }
 
-            string configFilePath = Path.Combine(appFolderPath, "config.txt");
-            List<string> lines = new() { "0.0.0.0", "0" };
+            string configFilePath = Path.Combine(appFolderPath, "config.json");
+            List<string> lines =
+                new() { "{", "\t\"cameraIp\": \"0.0.0.0\",", "\t\"cameraPort\": 0", "}" };
+
             if (!File.Exists(configFilePath))
             {
                 File.WriteAllLines(configFilePath, lines);

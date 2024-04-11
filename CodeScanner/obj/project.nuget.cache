@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kss5z2X1bdwyNc8m0NxlYcjr9SqGzVGnjLQJbHjGCeSwv3U5IB+t6oLTuFTh05neNnhK17UkAEzId/mnDV1bxw==",
+  "dgSpecHash": "Jr4zesSuTPApenAXpAJ7VE3zcyYld4PxBJV6s9Sw/eJAmcukKwG7NeWzTETXziGXqVADVbjC+GtXxI8e1rPNZA==",
   "success": true,
-  "projectFilePath": "C:\\projects\\CodeScanner\\CodeScanner\\CodeScanner.csproj",
+  "projectFilePath": "D:\\Projects\\CodeScanner\\CodeScanner\\CodeScanner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cbxjy\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\cbxjy\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

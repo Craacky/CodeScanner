@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WindowsFormsApp1
 {
@@ -22,8 +24,12 @@ namespace WindowsFormsApp1
             Environment.SpecialFolder.ApplicationData
         );
         static readonly string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner");
-        static readonly string configFilePath = Path.Combine(appFolderPath, "config.txt");
-        static readonly string scannedCodeFolderPath = Path.Combine(appFolderPath, "Scanned codes");
+        static readonly string configFilePath = Path.Combine(appFolderPath, "config.json");
+        static readonly string scannedCodeFolderPath = Path.Combine(appFolderPath, "Scanned Codes");
+        static readonly string scannedCodeArchiveFolderPath = Path.Combine(
+            appFolderPath,
+            "Total Scanned Codes"
+        );
 
         public static string Camera_ip
         {
@@ -38,14 +44,11 @@ namespace WindowsFormsApp1
 
         public UI()
         {
-            string Port_line;
-            using (StreamReader reader = new(configFilePath))
-            {
-                Camera_ip = reader.ReadLine();
-                Port_line = reader.ReadLine();
-                Camera_port = int.Parse(Port_line);
-            }
-            if (Camera_ip.Equals("0.0.0.0") && Port_line.Equals("0"))
+            string fileContent = File.ReadAllText(configFilePath);
+            dynamic settings = JsonConvert.DeserializeObject(fileContent);
+            Camera_port = settings.cameraPort;
+            Camera_ip = settings.cameraIp;
+            if (Camera_ip.Equals("0.0.0.0") && Camera_port.Equals(0))
             {
                 DialogResult choice = MessageBox.Show(
                     "Конфиругационный фалй пустой! Заполните его!",
@@ -56,7 +59,7 @@ namespace WindowsFormsApp1
                 if (choice == DialogResult.OK)
                 {
                     Environment.Exit(0);
-                    Application.Exit();
+                    System.Windows.Forms.Application.Exit();
                 }
             }
 
@@ -72,16 +75,15 @@ namespace WindowsFormsApp1
             using ApplicationContextArchive db_archive = new();
             if (message != "fail")
             {
-                var model = new DatabaseTemplate { MarkingCode = message };
-                db_buffer.Buffer.Add(model);
+                db_buffer.Buffer.Add(new DatabaseTemplate { MarkingCode = message });
                 db_buffer.SaveChanges();
 
-                db_archive.Archive.Add(model);
+                db_archive.Archive.Add(new DatabaseTemplate { MarkingCode = message });
                 db_archive.SaveChanges();
             }
         }
 
-        private void StartButton_Click(object sender, EventArgs e)
+        private void StartButton_Click_1(object sender, EventArgs e)
         {
             StatusBar.ReadOnly = true;
             StatusBar.BackColor = Color.LightGreen;
@@ -133,7 +135,7 @@ namespace WindowsFormsApp1
                 {
                     _form.StatusBar.BackColor = Color.Red;
                     _form.StatusBar.Text = "Ошибка программы";
-                    MessageBox.Show("Ошибка программы. Проверьте конфигурационный файл");
+                    MessageBox.Show("Проверьте конфигурационный файл!", "Ошибка программы");
                     Environment.Exit(0);
                 }
             }
@@ -181,7 +183,7 @@ namespace WindowsFormsApp1
                             {
                                 if (Pinger(Camera_ip))
                                 {
-                                    _form.StartButton_Click(new object(), new EventArgs());
+                                    _form.StartButton_Click_1(new object(), new EventArgs());
                                     return;
                                 }
                             }
@@ -208,7 +210,7 @@ namespace WindowsFormsApp1
                             AllCode += 1;
                             codeRead += 1;
                         }
-                        else if (message.Contains("fail") && isEmpty)
+                        if (isEmpty || message.Contains("fail"))
                         {
                             AllCode += 1;
                             codeNoRead += 1;
@@ -273,6 +275,19 @@ namespace WindowsFormsApp1
             return false;
         }
 
+        public static string ExtractBetweenTags(string text, string startTag, string endTag)
+        {
+            int startIndex = text.IndexOf(startTag) + startTag.Length;
+            int endIndex = text.IndexOf(endTag);
+
+            if (startIndex < 0 || endIndex < 0)
+            {
+                return string.Empty; // Not found
+            }
+
+            return text.Substring(startIndex, endIndex - startIndex);
+        }
+
         private void UploadDB_Click(object sender, EventArgs e)
         {
             StatusBar.Clear();
@@ -296,8 +311,7 @@ namespace WindowsFormsApp1
             }
 
             var firstCode = db.Buffer.Select(m => m.MarkingCode).First();
-            var gtin = firstCode.Substring(5, 22);
-            gtin = gtin[2..];
+            var gtin = ExtractBetweenTags(firstCode, "<start>", "<end>");
 
             if (CheckString(gtin))
             {
@@ -314,6 +328,34 @@ namespace WindowsFormsApp1
                 gtinStatus.Text = "GTIN коды не совпали";
             }
 
+            String archiveFilename =
+                scannedCodeArchiveFolderPath
+                + "\\"
+                + gtin
+                + '_'
+                + lotDate.Value.ToString("MM")
+                + '.'
+                + lotDate.Value.ToString("dd")
+                + '.'
+                + lotDate.Value.ToString("yy")
+                + '_'
+                + lotNumber
+                + ".txt";
+            FileStream fileArchive = new(scannedCodeArchiveFolderPath, FileMode.OpenOrCreate);
+            StreamWriter writerArchive = new(fileArchive, Encoding.UTF8);
+
+            var listDBArchive = db.Buffer.Select(m => m.MarkingCode).ToList();
+            var counter = 0;
+            foreach (var vals in listDBArchive)
+            {
+                if (!vals.Contains("fail"))
+                {
+                    writerArchive.WriteLine(ExtractBetweenTags(vals, "<start>", "<end>"));
+                    counter++;
+                }
+            }
+            writerArchive.Close();
+
             String filename =
                 scannedCodeFolderPath
                 + "\\"
@@ -327,6 +369,7 @@ namespace WindowsFormsApp1
                 + '_'
                 + lotNumber
                 + ".txt";
+
             FileStream file = new(filename, FileMode.OpenOrCreate);
             StreamWriter writer = new(file, Encoding.UTF8);
 
@@ -334,7 +377,11 @@ namespace WindowsFormsApp1
             foreach (var vals in listDB)
             {
                 if (!vals.Contains("fail"))
-                    writer.WriteLine(vals.Substring(7, 20));
+                {
+                    writer.WriteLine(
+                        ExtractBetweenTags(vals, "<start>", "<end>") + "\tКоличество:" + counter
+                    );
+                }
             }
             writer.Close();
 
@@ -343,7 +390,7 @@ namespace WindowsFormsApp1
 
             DialogResult choice = MessageBox.Show(
                 "Вы уверенны что хотите очистить буферную базу данных ?",
-                "Yes OR No",
+                "Удаление",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Information
             );
@@ -381,7 +428,7 @@ namespace WindowsFormsApp1
             _camera.codeRead = 0;
             _camera.codeNoRead = 0;
             StatusBar.BackColor = Color.LightGreen;
-            StatusBar.Text = "Статистика сброшена. Камера отключена.";
+            StatusBar.Text = "Статистика сброшена. Камера готова к работе";
         }
 
         private void LotNumBox_TextChanged(object sender, EventArgs e)
@@ -407,9 +454,12 @@ namespace WindowsFormsApp1
         {
             e.Cancel = true;
             Environment.Exit(0);
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
-        private void UI_Load(object sender, EventArgs e) { }
+        private void UI_Load(object sender, EventArgs e)
+        {
+            StartButton.BeginInvoke(new MethodInvoker(() => StartButton.Select()));
+        }
     }
 }
