@@ -23,32 +23,33 @@ namespace CodeScanner
 
         static void FilesInitilization()
         {
-            string appDataFolderPath = Environment.GetFolderPath(
-                Environment.SpecialFolder.ApplicationData
+            string appFolderPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "Code Scanner"
             );
-            string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner");
-
             string scannedCodesFolderPath = Path.Combine(appFolderPath, "Scanned Codes");
             string scannedCodesArchiveFolderPath = Path.Combine(
                 appFolderPath,
                 "Total Scanned Codes"
             );
-            if (!Directory.Exists(scannedCodesFolderPath))
-            {
-                Directory.CreateDirectory(scannedCodesFolderPath);
-            }
-            if (!Directory.Exists(scannedCodesArchiveFolderPath))
-            {
-                Directory.CreateDirectory(scannedCodesArchiveFolderPath);
-            }
-
+            DirectoryHandler(appFolderPath);
+            DirectoryHandler(scannedCodesFolderPath);
+            DirectoryHandler(scannedCodesArchiveFolderPath);
             string configFilePath = Path.Combine(appFolderPath, "config.json");
             List<string> lines =
-                new() { "{", "\t\"cameraIp\": \"0.0.0.0\",", "\t\"cameraPort\": 0", "}" };
+                new() { "{", "\t\"cameraIP\": \"0.0.0.0\",", "\t\"cameraPort\": 0", "}" };
 
             if (!File.Exists(configFilePath))
             {
                 File.WriteAllLines(configFilePath, lines);
+            }
+        }
+
+        static void DirectoryHandler(string path)
+        {
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
             }
         }
     }

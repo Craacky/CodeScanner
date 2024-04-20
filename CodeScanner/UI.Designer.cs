@@ -79,7 +79,7 @@ namespace WindowsFormsApp1
 			StartButton.Location = new System.Drawing.Point(39, 28);
 			StartButton.Margin = new Padding(3, 4, 3, 4);
 			StartButton.Name = "StartButton";
-			StartButton.Size = new System.Drawing.Size(170, 20);
+			StartButton.Size = new System.Drawing.Size(177, 23);
 			StartButton.TabIndex = 1;
 			StartButton.Text = "1.Старт";
 			StartButton.UseVisualStyleBackColor = true;
@@ -106,6 +106,7 @@ namespace WindowsFormsApp1
 			resetStat.TabIndex = 14;
 			resetStat.Text = "5.Сброс статистики";
 			resetStat.UseVisualStyleBackColor = true;
+			resetStat.Click += ResetStat_Click;
 			// 
 			// UploadDB
 			// 
@@ -118,6 +119,7 @@ namespace WindowsFormsApp1
 			UploadDB.TabIndex = 10;
 			UploadDB.Text = "4. Записать файл";
 			UploadDB.UseVisualStyleBackColor = true;
+			UploadDB.Click += UploadDB_Click;
 			// 
 			// inputsBox
 			// 
@@ -130,7 +132,7 @@ namespace WindowsFormsApp1
 			inputsBox.Controls.Add(lotNumBox);
 			inputsBox.Location = new System.Drawing.Point(43, 176);
 			inputsBox.Name = "inputsBox";
-			inputsBox.Size = new System.Drawing.Size(532, 87);
+			inputsBox.Size = new System.Drawing.Size(540, 88);
 			inputsBox.TabIndex = 31;
 			inputsBox.TabStop = false;
 			inputsBox.Text = "Исходные данные";
@@ -143,7 +145,7 @@ namespace WindowsFormsApp1
 			gtinStatus.Margin = new Padding(3, 4, 3, 4);
 			gtinStatus.Name = "gtinStatus";
 			gtinStatus.ReadOnly = true;
-			gtinStatus.Size = new System.Drawing.Size(163, 20);
+			gtinStatus.Size = new System.Drawing.Size(163, 23);
 			gtinStatus.TabIndex = 3;
 			gtinStatus.TextAlign = HorizontalAlignment.Center;
 			// 
@@ -156,7 +158,7 @@ namespace WindowsFormsApp1
 			textBox2.Margin = new Padding(3, 4, 3, 4);
 			textBox2.Name = "textBox2";
 			textBox2.ReadOnly = true;
-			textBox2.Size = new System.Drawing.Size(110, 13);
+			textBox2.Size = new System.Drawing.Size(110, 16);
 			textBox2.TabIndex = 21;
 			textBox2.Text = "3. GTIN";
 			// 
@@ -167,7 +169,7 @@ namespace WindowsFormsApp1
 			textBox1.Location = new System.Drawing.Point(122, 53);
 			textBox1.MaxLength = 14;
 			textBox1.Name = "textBox1";
-			textBox1.Size = new System.Drawing.Size(194, 20);
+			textBox1.Size = new System.Drawing.Size(194, 23);
 			textBox1.TabIndex = 20;
 			// 
 			// permissionBox
@@ -176,7 +178,7 @@ namespace WindowsFormsApp1
 			permissionBox.Cursor = Cursors.Hand;
 			permissionBox.Location = new System.Drawing.Point(343, 18);
 			permissionBox.Name = "permissionBox";
-			permissionBox.Size = new System.Drawing.Size(140, 17);
+			permissionBox.Size = new System.Drawing.Size(176, 21);
 			permissionBox.TabIndex = 18;
 			permissionBox.Text = "Блокировка измнений";
 			permissionBox.UseVisualStyleBackColor = true;
@@ -190,7 +192,7 @@ namespace WindowsFormsApp1
 			lotMunText.Margin = new Padding(3, 4, 3, 4);
 			lotMunText.Name = "lotMunText";
 			lotMunText.ReadOnly = true;
-			lotMunText.Size = new System.Drawing.Size(110, 13);
+			lotMunText.Size = new System.Drawing.Size(110, 16);
 			lotMunText.TabIndex = 16;
 			lotMunText.Text = "2. Номер партии";
 			// 
@@ -201,8 +203,10 @@ namespace WindowsFormsApp1
 			lotNumBox.Location = new System.Drawing.Point(122, 16);
 			lotNumBox.MaxLength = 4;
 			lotNumBox.Name = "lotNumBox";
-			lotNumBox.Size = new System.Drawing.Size(194, 20);
+			lotNumBox.Size = new System.Drawing.Size(194, 23);
 			lotNumBox.TabIndex = 15;
+			lotNumBox.TextChanged += LotNumBox_TextChanged;
+			lotNumBox.KeyPress += LotNumBox_KeyPress;
 			// 
 			// datetimeBox
 			// 
@@ -210,7 +214,7 @@ namespace WindowsFormsApp1
 			datetimeBox.FlatStyle = FlatStyle.Flat;
 			datetimeBox.Location = new System.Drawing.Point(320, 26);
 			datetimeBox.Name = "datetimeBox";
-			datetimeBox.Size = new System.Drawing.Size(253, 68);
+			datetimeBox.Size = new System.Drawing.Size(263, 68);
 			datetimeBox.TabIndex = 30;
 			datetimeBox.TabStop = false;
 			datetimeBox.Text = "Дата";
@@ -220,7 +224,7 @@ namespace WindowsFormsApp1
 			lotDate.Cursor = Cursors.Hand;
 			lotDate.Location = new System.Drawing.Point(29, 28);
 			lotDate.Name = "lotDate";
-			lotDate.Size = new System.Drawing.Size(200, 20);
+			lotDate.Size = new System.Drawing.Size(200, 23);
 			lotDate.TabIndex = 17;
 			// 
 			// statusBox
@@ -229,7 +233,7 @@ namespace WindowsFormsApp1
 			statusBox.FlatStyle = FlatStyle.Flat;
 			statusBox.Location = new System.Drawing.Point(43, 100);
 			statusBox.Name = "statusBox";
-			statusBox.Size = new System.Drawing.Size(532, 54);
+			statusBox.Size = new System.Drawing.Size(540, 58);
 			statusBox.TabIndex = 29;
 			statusBox.TabStop = false;
 			statusBox.Text = "Статус";
@@ -243,7 +247,7 @@ namespace WindowsFormsApp1
 			StatusBar.Margin = new Padding(3, 4, 3, 4);
 			StatusBar.Name = "StatusBar";
 			StatusBar.ReadOnly = true;
-			StatusBar.Size = new System.Drawing.Size(451, 20);
+			StatusBar.Size = new System.Drawing.Size(451, 23);
 			StatusBar.TabIndex = 2;
 			StatusBar.TextAlign = HorizontalAlignment.Center;
 			// 
@@ -258,7 +262,7 @@ namespace WindowsFormsApp1
 			statisticsBox.Controls.Add(ReadCodeBox);
 			statisticsBox.Location = new System.Drawing.Point(43, 285);
 			statisticsBox.Name = "statisticsBox";
-			statisticsBox.Size = new System.Drawing.Size(530, 153);
+			statisticsBox.Size = new System.Drawing.Size(540, 152);
 			statisticsBox.TabIndex = 28;
 			statisticsBox.TabStop = false;
 			statisticsBox.Text = "Статистика";
@@ -272,7 +276,7 @@ namespace WindowsFormsApp1
 			textBox4.Margin = new Padding(3, 4, 3, 4);
 			textBox4.Name = "textBox4";
 			textBox4.ReadOnly = true;
-			textBox4.Size = new System.Drawing.Size(110, 13);
+			textBox4.Size = new System.Drawing.Size(130, 16);
 			textBox4.TabIndex = 24;
 			textBox4.Text = "Прочитано кодов";
 			// 
@@ -284,7 +288,7 @@ namespace WindowsFormsApp1
 			AllCodeCounter.Margin = new Padding(3, 4, 3, 4);
 			AllCodeCounter.Name = "AllCodeCounter";
 			AllCodeCounter.ReadOnly = true;
-			AllCodeCounter.Size = new System.Drawing.Size(317, 20);
+			AllCodeCounter.Size = new System.Drawing.Size(317, 23);
 			AllCodeCounter.TabIndex = 23;
 			// 
 			// textBox3
@@ -296,7 +300,7 @@ namespace WindowsFormsApp1
 			textBox3.Margin = new Padding(3, 4, 3, 4);
 			textBox3.Name = "textBox3";
 			textBox3.ReadOnly = true;
-			textBox3.Size = new System.Drawing.Size(110, 13);
+			textBox3.Size = new System.Drawing.Size(110, 16);
 			textBox3.TabIndex = 22;
 			textBox3.Text = "Всего кодов";
 			// 
@@ -308,7 +312,7 @@ namespace WindowsFormsApp1
 			NoReadCodeCounter.Margin = new Padding(3, 4, 3, 4);
 			NoReadCodeCounter.Name = "NoReadCodeCounter";
 			NoReadCodeCounter.ReadOnly = true;
-			NoReadCodeCounter.Size = new System.Drawing.Size(317, 20);
+			NoReadCodeCounter.Size = new System.Drawing.Size(317, 23);
 			NoReadCodeCounter.TabIndex = 9;
 			// 
 			// NoReadCodeBox
@@ -319,7 +323,7 @@ namespace WindowsFormsApp1
 			NoReadCodeBox.Margin = new Padding(3, 4, 3, 4);
 			NoReadCodeBox.Name = "NoReadCodeBox";
 			NoReadCodeBox.ReadOnly = true;
-			NoReadCodeBox.Size = new System.Drawing.Size(144, 13);
+			NoReadCodeBox.Size = new System.Drawing.Size(144, 16);
 			NoReadCodeBox.TabIndex = 8;
 			NoReadCodeBox.Text = "Не прочитано кодов";
 			// 
@@ -331,12 +335,12 @@ namespace WindowsFormsApp1
 			ReadCodeBox.Margin = new Padding(3, 4, 3, 4);
 			ReadCodeBox.Name = "ReadCodeBox";
 			ReadCodeBox.ReadOnly = true;
-			ReadCodeBox.Size = new System.Drawing.Size(317, 20);
+			ReadCodeBox.Size = new System.Drawing.Size(317, 23);
 			ReadCodeBox.TabIndex = 7;
 			// 
 			// UI
 			// 
-			AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = System.Drawing.SystemColors.ButtonFace;
 			ClientSize = new System.Drawing.Size(616, 547);

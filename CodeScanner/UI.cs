@@ -7,6 +7,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using CodeScanner.DB.Entities;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using static System.Net.Mime.MediaTypeNames;
@@ -20,14 +21,18 @@ namespace WindowsFormsApp1
         private static string _camera_ip;
         private static int _camera_port;
         private bool _subscribedNotify;
-        static readonly string appDataFolderPath = Environment.GetFolderPath(
-            Environment.SpecialFolder.ApplicationData
+
+        static readonly string appDataFolderPath = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            "Code Scanner"
         );
-        static readonly string appFolderPath = Path.Combine(appDataFolderPath, "Code Scanner");
-        static readonly string configFilePath = Path.Combine(appFolderPath, "config.json");
-        static readonly string scannedCodeFolderPath = Path.Combine(appFolderPath, "Scanned Codes");
+        static readonly string configFilePath = Path.Combine(appDataFolderPath, "config.json");
+        static readonly string scannedCodeFolderPath = Path.Combine(
+            appDataFolderPath,
+            "Scanned Codes"
+        );
         static readonly string scannedCodeArchiveFolderPath = Path.Combine(
-            appFolderPath,
+            appDataFolderPath,
             "Total Scanned Codes"
         );
 
@@ -42,30 +47,36 @@ namespace WindowsFormsApp1
             set => _camera_port = value;
         }
 
-        public UI()
+        public static void JsonHandler()
         {
-            string fileContent = File.ReadAllText(configFilePath);
-            dynamic settings = JsonConvert.DeserializeObject(fileContent);
-            Camera_port = settings.cameraPort;
-            Camera_ip = settings.cameraIp;
-            if (Camera_ip.Equals("0.0.0.0") && Camera_port.Equals(0))
+            if (File.Exists(configFilePath))
             {
-                DialogResult choice = MessageBox.Show(
-                    "Конфиругационный фалй пустой! Заполните его!",
-                    "Если всё понятно, нажмите OK",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
-                if (choice == DialogResult.OK)
+                string fileContent = File.ReadAllText(configFilePath);
+                dynamic settings = JsonConvert.DeserializeObject(fileContent);
+                Camera_port = settings.cameraPort;
+                Camera_ip = settings.cameraIP;
+                if (Camera_ip.Equals("0.0.0.0") && Camera_port.Equals(0))
                 {
-                    Environment.Exit(0);
-                    System.Windows.Forms.Application.Exit();
+                    DialogResult choice = MessageBox.Show(
+                        "Конфиругационный фалй пустой! Заполните его!",
+                        "Если всё понятно, нажмите OK",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+                    if (choice == DialogResult.OK)
+                    {
+                        Environment.Exit(0);
+                        System.Windows.Forms.Application.Exit();
+                    }
                 }
             }
+        }
 
+        public UI()
+        {
+            JsonHandler();
             InitializeComponent();
             _camera = new Camera(Camera_ip, Camera_port, this);
-
             openFileDialog.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
         }
 
@@ -99,7 +110,7 @@ namespace WindowsFormsApp1
         class Camera
         {
             private readonly string _ip;
-            private readonly int _port = Camera_port;
+            private readonly int _port;
             private TcpClient _client;
             private NetworkStream _stream;
 
@@ -192,7 +203,7 @@ namespace WindowsFormsApp1
                     catch (Exception) { }
                     try
                     {
-                        byte[] data = new byte[128]; // буфер для получаемых данных
+                        byte[] data = new byte[128];
 
                         StringBuilder builder = new();
                         int bytes = 0;
@@ -277,15 +288,26 @@ namespace WindowsFormsApp1
 
         public static string ExtractBetweenTags(string text, string startTag, string endTag)
         {
-            int startIndex = text.IndexOf(startTag) + startTag.Length;
-            int endIndex = text.IndexOf(endTag);
-
-            if (startIndex < 0 || endIndex < 0)
+            if (text.Contains(startTag) && text.Contains(endTag))
             {
-                return string.Empty; // Not found
+                int startIndex = text.IndexOf(startTag) + startTag.Length;
+                int endIndex = text.IndexOf(endTag);
+
+                if (startIndex >= 0 && endIndex >= 0)
+                {
+                    return text[startIndex..endIndex];
+                }
+            }
+            else if (text.Length < 13)
+            {
+                return "fail";
+            }
+            else
+            {
+                return text.Substring(3, 14);
             }
 
-            return text.Substring(startIndex, endIndex - startIndex);
+            return string.Empty;
         }
 
         private void UploadDB_Click(object sender, EventArgs e)
@@ -311,7 +333,7 @@ namespace WindowsFormsApp1
             }
 
             var firstCode = db.Buffer.Select(m => m.MarkingCode).First();
-            var gtin = ExtractBetweenTags(firstCode, "<start>", "<end>");
+            var gtin = ExtractBetweenTags(firstCode, "<start>", "<stop>");
 
             if (CheckString(gtin))
             {
@@ -328,34 +350,6 @@ namespace WindowsFormsApp1
                 gtinStatus.Text = "GTIN коды не совпали";
             }
 
-            String archiveFilename =
-                scannedCodeArchiveFolderPath
-                + "\\"
-                + gtin
-                + '_'
-                + lotDate.Value.ToString("MM")
-                + '.'
-                + lotDate.Value.ToString("dd")
-                + '.'
-                + lotDate.Value.ToString("yy")
-                + '_'
-                + lotNumber
-                + ".txt";
-            FileStream fileArchive = new(scannedCodeArchiveFolderPath, FileMode.OpenOrCreate);
-            StreamWriter writerArchive = new(fileArchive, Encoding.UTF8);
-
-            var listDBArchive = db.Buffer.Select(m => m.MarkingCode).ToList();
-            var counter = 0;
-            foreach (var vals in listDBArchive)
-            {
-                if (!vals.Contains("fail"))
-                {
-                    writerArchive.WriteLine(ExtractBetweenTags(vals, "<start>", "<end>"));
-                    counter++;
-                }
-            }
-            writerArchive.Close();
-
             String filename =
                 scannedCodeFolderPath
                 + "\\"
@@ -369,25 +363,53 @@ namespace WindowsFormsApp1
                 + '_'
                 + lotNumber
                 + ".txt";
-
+            String archiveFilename =
+                scannedCodeArchiveFolderPath
+                + "\\"
+                + gtin
+                + '_'
+                + lotDate.Value.ToString("MM")
+                + '.'
+                + lotDate.Value.ToString("dd")
+                + '.'
+                + lotDate.Value.ToString("yy")
+                + '_'
+                + lotNumber
+                + ".txt";
+            FileStream fileArchive = new(archiveFilename, FileMode.OpenOrCreate);
             FileStream file = new(filename, FileMode.OpenOrCreate);
+
+            StreamWriter writerArchive = new(fileArchive, Encoding.UTF8);
             StreamWriter writer = new(file, Encoding.UTF8);
 
+            var listDBArchive = db.Buffer.Select(m => m.MarkingCode).ToList();
             var listDB = db.Buffer.Select(m => m.MarkingCode).Distinct().ToList();
+
             foreach (var vals in listDB)
             {
                 if (!vals.Contains("fail"))
                 {
                     writer.WriteLine(
-                        ExtractBetweenTags(vals, "<start>", "<end>") + "\tКоличество:" + counter
+                        ExtractBetweenTags(vals, "<start>", "<stop>")
+                            + "\tКоличество:"
+                            + listDBArchive.Count
                     );
                 }
             }
+            foreach (var vals in listDBArchive)
+            {
+                if (!vals.Contains("fail"))
+                {
+                    writerArchive.WriteLine(ExtractBetweenTags(vals, "<start>", "<stop>"));
+                }
+            }
+            writerArchive.Close();
             writer.Close();
 
             StatusBar.BackColor = Color.LightGreen;
-            StatusBar.Text = "База данных выгружена в файл";
+            StatusBar.Text = "База данных выгружена в файл и очищена.";
 
+            /*
             DialogResult choice = MessageBox.Show(
                 "Вы уверенны что хотите очистить буферную базу данных ?",
                 "Удаление",
@@ -397,7 +419,7 @@ namespace WindowsFormsApp1
 
             StatusBar.Clear();
             StatusBar.BackColor = Color.White;
-
+            
             if (choice == DialogResult.Yes)
             {
                 db.Database.ExecuteSqlRaw("TRUNCATE TABLE [buffer]");
@@ -410,15 +432,16 @@ namespace WindowsFormsApp1
                 StatusBar.Text = "Буферная база данных не очищена";
                 return;
             }
+            */
         }
 
         private void ResetStat_Click(object sender, EventArgs e)
         {
-            if (_subscribedNotify)
+            /*if (_subscribedNotify)
             {
                 _camera.Notify -= Camera_Notify;
                 _subscribedNotify = false;
-            }
+            }*/
             StatusBar.Clear();
             StatusBar.BackColor = Color.White;
             AllCodeCounter.Clear();
@@ -428,7 +451,9 @@ namespace WindowsFormsApp1
             _camera.codeRead = 0;
             _camera.codeNoRead = 0;
             StatusBar.BackColor = Color.LightGreen;
-            StatusBar.Text = "Статистика сброшена. Камера готова к работе";
+            ApplicationContextBuffer db = new();
+            db.Database.ExecuteSqlRaw("TRUNCATE TABLE [buffer]");
+            StatusBar.Text = "Статистика и буферная база данных сброшена.";
         }
 
         private void LotNumBox_TextChanged(object sender, EventArgs e)

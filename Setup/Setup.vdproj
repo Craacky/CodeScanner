@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8CE13B43C6524A9288C1E91355422C00"
+        "MsmKey" = "8:_DFED7F55D57F429D828ADF4C4E037C8E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -97,6 +97,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -217,7 +225,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Code Scanner"
         "ProductCode" = "8:{CC3CA07F-1197-4F72-991E-38EEB35E857A}"
-        "PackageCode" = "8:{6CAFF70C-1E18-4E55-AB43-3F7C4A58338D}"
+        "PackageCode" = "8:{35FC5EF3-6A7A-4532-85D3-8F04FFE81A2A}"
         "UpgradeCode" = "8:{B84240FB-3073-4B79-9516-83D2C4DDF9A0}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -337,44 +345,16 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1FE1D42ADCCD4EF3813546AC033CF7E6"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1BF967543E2E4ECB9C97FACBCA53ADD8"
             {
-            "Name" = "8:Code Scanner"
+            "Name" = "8:camera-code.ico"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_8CE13B43C6524A9288C1E91355422C00"
-            "Folder" = "8:_B81339D33C914E8186A9127271A6C8C8"
-            "WorkingFolder" = "8:_40104692F7694E73B433E656C08DA69F"
-            "Icon" = "8:_523A92579AB04B3AAA21EE5D54497308"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_41FCD0331A984F7DA5F7ACCC3140CD07"
-            {
-            "Name" = "8:camera-code.iso"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_8CE13B43C6524A9288C1E91355422C00"
+            "Target" = "8:_DFED7F55D57F429D828ADF4C4E037C8E"
             "Folder" = "8:_40104692F7694E73B433E656C08DA69F"
-            "WorkingFolder" = "8:_40104692F7694E73B433E656C08DA69F"
-            "Icon" = "8:_523A92579AB04B3AAA21EE5D54497308"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7B22F514A34D48D899BDE7838B1E7422"
-            {
-            "Name" = "8:Code Scanner"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_8CE13B43C6524A9288C1E91355422C00"
-            "Folder" = "8:_56D948CF354D4E97A1ECB7E0E2C03776"
             "WorkingFolder" = "8:_40104692F7694E73B433E656C08DA69F"
             "Icon" = "8:_523A92579AB04B3AAA21EE5D54497308"
             "Feature" = "8:"
@@ -778,7 +758,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8CE13B43C6524A9288C1E91355422C00"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_DFED7F55D57F429D828ADF4C4E037C8E"
             {
             "SourcePath" = "8:..\\CodeScanner\\obj\\Release\\net6.0-windows7.0\\apphost.exe"
             "TargetName" = "8:"

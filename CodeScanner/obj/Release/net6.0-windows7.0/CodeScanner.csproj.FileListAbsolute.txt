@@ -104,3 +104,4 @@ D:\Projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\refint\CodeSca
 D:\Projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\CodeScanner.pdb
 D:\Projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\CodeScanner.genruntimeconfig.cache
 D:\Projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\ref\CodeScanner.dll
+D:\Projects\CodeScanner\CodeScanner\obj\Release\net6.0-windows7.0\CodeScanner.Properties.Resources.resources

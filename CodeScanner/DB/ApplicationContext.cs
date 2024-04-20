@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CodeScanner.DB.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace WindowsFormsApp1
 {
@@ -14,7 +15,7 @@ namespace WindowsFormsApp1
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=localhost;Database=buffer_db;Trusted_Connection=True;"
+                @"Server=localhost\SQLEXPRESS;Database=buffer_db;Trusted_Connection=True;"
             );
         }
     }
@@ -31,7 +32,7 @@ namespace WindowsFormsApp1
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=localhost;Database=archive_db;Trusted_Connection=True;"
+                @"Server=localhost\SQLEXPRESS;Database=archive_db;Trusted_Connection=True;"
             );
         }
     }

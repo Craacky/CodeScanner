@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace CodeScanner.DB.Entities
 {
     public class DatabaseTemplate
     {
